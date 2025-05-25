@@ -29,6 +29,11 @@
 #define XXX &none
 #define ___ &trans
 
+// "HYPER" - a combination of all four modifiers
+#ifndef HY
+#define HY(X) LC(LA(LS(LG(X))))
+#endif
+
 /* Global settings */
 
 #define QUICK_TAP_MS 175
@@ -310,11 +315,10 @@ label= "MACRO"                              ; // idx 6
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
     bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &kp HYPER(F12)  &kp HYPER(F7)   &kp HYPER(F8)   &kp HYPER(F9)  &kp HYPER(N1)        &kp HYPER(N5)   &kp HYPER(F19)  &kp HYPER(F20)  &kp HYPER(F21)   &kp HYPER(F24)
-                &kp HYPER(F11)  &kp HYPER(F4)   &kp HYPER(F5)   &kp HYPER(F6)  &kp HYPER(N2)        &kp HYPER(N6)   &kp HYPER(F16)  &kp HYPER(F17)  &kp HYPER(F18)   &kp HYPER(F23)
-&kp HYPER(N4)       &kp HYPER(F10)  &kp HYPER(F1)   &kp HYPER(F2)   &kp HYPER(F3)  &kp HYPER(N3)        &kp HYPER(N7)   &kp HYPER(F13)  &kp HYPER(F14)  &kp HYPER(F15)   &kp HYPER(F22)  &kp HYPER(N8)
-                                        &trans      &none       &none           &kp HYPER(N9)   &kp HYPER(N0)   &kp HYPER(A)
+                &kp HY(F12) &kp HY(F7)  &kp HY(F8)  &kp HY(F9)  &kp HY(N1)      &kp HY(N5)  &kp HY(F19) &kp HY(F20) &kp HY(F21) &kp HY(F24)
+                &kp HY(F11) &kp HY(F4)  &kp HY(F5)  &kp HY(F6)  &kp HY(N2)      &kp HY(N6)  &kp HY(F16) &kp HY(F17) &kp HY(F18) &kp HY(F23)
+    &kp HY(N4)  &kp HY(F10) &kp HY(F1)  &kp HY(F2)  &kp HY(F3)  &kp HY(N3)      &kp HY(N7)  &kp HY(F13) &kp HY(F14) &kp HY(F15) &kp HY(F22) &kp HY(N8)
+                                        &trans      &none       &none           &kp HY(N9)  &kp HY(N0)  &kp HY(A)
                                             >;
                                     };
         };
