@@ -29,9 +29,6 @@
 #define XXX &none
 #define ___ &trans
 
-#define M(x) MEH(x)
-#define H(x) HYPER(x)
-
 /* Global settings */
 
 #define QUICK_TAP_MS 175
@@ -297,8 +294,8 @@ label= "FUNC"                              ; // idx 5
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "MACRO"                              ; // idx 6
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-// MEH(x)   = M(x) = LCTRL + LALT + LSHFT + x
-// HYPER(x) = H(x) = LCTRL + LALT + LSHFT + LGUI + x
+// MEH(x)   = LCTRL + LALT + LSHFT + x
+// HYPER(x) = LCTRL + LALT + LSHFT + LGUI + x
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -311,10 +308,10 @@ label= "MACRO"                              ; // idx 6
     bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp H(F12)  &kp H(F7)   &kp H(F8)   &kp H(F9)  &kp H(N1)        &kp H(N5)   &kp H(F19)  &kp H(F20)  &kp H(F21)   &kp H(F24)
-                &kp H(F11)  &kp H(F4)   &kp H(F5)   &kp H(F6)  &kp H(N2)        &kp H(N6)   &kp H(F16)  &kp H(F17)  &kp H(F18)   &kp H(F23)
-&kp H(N4)       &kp H(F10)  &kp H(F1)   &kp H(F2)   &kp H(F3)  &kp H(N3)        &kp H(N7)   &kp H(F13)  &kp H(F14)  &kp H(F15)   &kp H(F22)  &kp H(N8)
-                                        &trans      &none       &none           &kp H(N9)   &kp H(N0)   &kp H(A)
+                &kp HYPER(F12)  &kp HYPER(F7)   &kp HYPER(F8)   &kp HYPER(F9)  &kp HYPER(N1)        &kp HYPER(N5)   &kp HYPER(F19)  &kp HYPER(F20)  &kp HYPER(F21)   &kp HYPER(F24)
+                &kp HYPER(F11)  &kp HYPER(F4)   &kp HYPER(F5)   &kp HYPER(F6)  &kp HYPER(N2)        &kp HYPER(N6)   &kp HYPER(F16)  &kp HYPER(F17)  &kp HYPER(F18)   &kp HYPER(F23)
+&kp HYPER(N4)       &kp HYPER(F10)  &kp HYPER(F1)   &kp HYPER(F2)   &kp HYPER(F3)  &kp HYPER(N3)        &kp HYPER(N7)   &kp HYPER(F13)  &kp HYPER(F14)  &kp HYPER(F15)   &kp HYPER(F22)  &kp HYPER(N8)
+                                        &trans      &none       &none           &kp HYPER(N9)   &kp HYPER(N0)   &kp HYPER(A)
                                             >;
                                     };
         };
