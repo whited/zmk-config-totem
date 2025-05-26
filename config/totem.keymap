@@ -162,7 +162,7 @@ label= "COLEMAK-DH"                        ;
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SINGLE_QUOTE
                 &hml LEFT_GUI A &hml LEFT_ALT R &hml LEFT_SHIFT S &hml LEFT_CONTROL T &kp G &kp M       &hmr RIGHT_CONTROL N &hmr RIGHT_SHIFT E &hmr RIGHT_ALT I &hmr RIGHT_GUI O
     &kp LSHFT   &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
-                                        &kp ESC     &lt 1 SPACE &lt 2 TAB       &lt 4 ENTER &lt 3 BSPC  &lt 5 DEL
+                                        &lt 6 ESC   &lt 1 SPACE &lt 2 TAB       &lt 4 ENTER &lt 3 BSPC  &lt 5 DEL
                         >;
                 };
 
